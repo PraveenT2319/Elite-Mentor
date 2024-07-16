@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -33,247 +34,56 @@
       <!-- Style CSS --> 
       <link rel="stylesheet" href="assets/css/style.css">
       <!-- Responsive  CSS -->
-      <link rel="stylesheet" href="assets/css/responsive.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <style>
-         .heading {
-    text-align: center;
-    color: #454343;
-    font-size: 30px;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 70px;
-    text-transform: uppercase;
-    z-index: 999;
-}
-.white-heading{
-    color: #ffffff;
-}
-.heading:after {
-    content: ' ';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    height: 40px;
-    width: 180px;
-    border-radius: 4px;
-    transform: translateX(-50%);
-    background: url(img/heading-line.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.white-heading:after {
-    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
+      <link rel="stylesheet" href="assets/css/responsive.css">
+   <style>
 
-.heading span {
-    font-size: 18px;
+label {
     display: block;
-    font-weight: 500;
+    margin-bottom: 5px;
+    color: #666;
 }
-.white-heading span {
-    color: #ffffff;
-}
-/*-----Testimonial-------*/
 
-.testimonial:after {
-    position: absolute;
-    top: -0 !important;
-    left: 0;
-    content: " ";
-    background: url(img/testimonial.bg-top.png);
-    background-size: 100% 100px;
+input, textarea {
     width: 100%;
-    height: 100px;
-    float: left;
-    z-index: 99;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-.testimonial {
-    min-height: 375px;
-    position: relative;
-    background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-position: center;
-        background-size: cover;
-}
-#testimonial4 .carousel-inner:hover{
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-}
-#testimonial4 .carousel-inner:active{
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-}
-#testimonial4 .carousel-inner .item{
-  overflow: hidden;
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.testimonial4_indicators .carousel-indicators{
-  left: 0;
-  margin: 0;
-  width: 100%;
-  font-size: 0;
-  height: 20px;
-  bottom: 15px;
-  padding: 0 5px;
-  cursor: e-resize;
-  overflow-x: auto;
-  overflow-y: hidden;
-  position: absolute;
-  text-align: center;
-  white-space: nowrap;
+button:hover {
+    background-color: #218838;
 }
-.testimonial4_indicators .carousel-indicators li{
-  padding: 0;
-  width: 14px;
-  height: 14px;
-  border: none;
-  text-indent: 0;
-  margin: 2px 3px;
-  cursor: pointer;
-  display: inline-block;
-  background: #ffffff;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-}
-.testimonial4_indicators .carousel-indicators .active{
-  padding: 0;
-  width: 14px;
-  height: 14px;
-  border: none;
-  margin: 2px 3px;
-  background-color: #9dd3af;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-}
-.testimonial4_indicators .carousel-indicators::-webkit-scrollbar{
-  height: 3px;
-}
-.testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb{
-  background: #eeeeee;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
+.about-btn {
+            text-align: center; /* Center the button using text-align */
+        }
 
-.testimonial4_control_button .carousel-control{
-  top: 175px;
-  opacity: 1;
-  width: 40px;
-  bottom: auto;
-  height: 40px;
-  font-size: 10px;
-  cursor: pointer;
-  font-weight: 700;
-  overflow: hidden;
-  line-height: 38px;
-  text-shadow: none;
-  text-align: center;
-  position: absolute;
-  background: transparent;
-  border: 2px solid #ffffff;
-  text-transform: uppercase;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: all 0.6s cubic-bezier(0.3,1,0,1);
-  transition: all 0.6s cubic-bezier(0.3,1,0,1);
-}
-.testimonial4_control_button .carousel-control.left{
-  left: 7%;
-  top: 50%;
-  right: auto;
-}
-.testimonial4_control_button .carousel-control.right{
-  right: 7%;
-  top: 50%;
-  left: auto;
-}
-.testimonial4_control_button .carousel-control.left:hover,
-.testimonial4_control_button .carousel-control.right:hover{
-  color: #000;
-  background: #fff;
-  border: 2px solid #fff;
-}
+        .about-us-into-btn-2 {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
 
-.testimonial4_header{
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 550px;
-  display: block;
-  margin: 30px auto;
-  text-align: center;
-  position: relative;
-}
-.testimonial4_header h4{
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 600;
-  position: relative;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
+      
 
-.testimonial4_slide{
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 70%;
-  margin: auto;
-  padding: 20px;
-  position: relative;
-  text-align: center;
-}
-.testimonial4_slide img {
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 136px;
-    height: 136px;
-    margin: auto;
-    display: block;
-    color: #f2f2f2;
-    font-size: 18px;
-    line-height: 46px;
-    text-align: center;
-    position: relative;
-    border-radius: 50%;
-    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
-}
-.testimonial4_slide p {
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 1.4;
-    margin: 40px 0 20px 0;
-}
-.testimonial4_slide h4 {
-  color: #ffffff;
-  font-size: 22px;
-}
-
-.testimonial .carousel {
-	padding-bottom:50px;
-}
-.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
-    width: 35px;
-    height: 35px;
-}
-/* ------testimonial  close-------*/
-      </style>
+        /* Optionally use flexbox for centering */
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+   </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
    </head>
 
@@ -283,35 +93,6 @@
 
       <!-- START HEADER SECTION -->
       <header class="main-header">
-         <!-- START TOP AREA -->
-         <div class="top-area">
-            <div class="auto-container">
-               <div class="row">
-                  <div class="col-lg-4 col-md-12 col-sm-12 col-12 text-lg-left text-center">
-                     <div class="header-social">
-                        <ul>
-                           <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                           <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                           <li><a href="#"><i class="icofont-youtube"></i></a></li>
-                           <li><a href="#"><i class="icofont-pinterest"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <!-- end col -->
-                  <div class="col-lg-8 col-md-12 col-sm-12 col-12 text-lg-right text-center">
-                     <div class="top-menu">
-                        <ul>
-                           <li><a href="#"><i class="icofont-location-pin"></i>Bangalore, Karnataka, India</a></li>
-                           <li><a href="#"><i class="icofont-phone"></i>+91 97414 22392 	</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <!-- end col -->
-               </div>
-            </div>
-         </div>
-         <!-- END TOP AREA -->
-
          <!-- START LOGO AREA -->
          <div class="logo-area">
             <div class="auto-container">
@@ -319,7 +100,7 @@
                   <div class="col-lg-3 col-12 mx-auto text-lg-left text-center pl-0 mb-lg-0 mb-4">
                      <div class="logo">
                         <a href="index.html">
-                        <img class="img-fluid" src="assets/img/gallery/logo.png" alt="">
+                       <img class="img-fluid" src="assets/img/gallery/logo.png" alt="">
                         </a>
                      </div>
                   </div>
@@ -329,15 +110,15 @@
                         <div class="header-info-icon">
                            <i class="icofont-envelope"></i>
                         </div>
-                        <h5>Connect With Us</h5>
-                        <p>theelitementors@gmail.com</p>
+                        <h5>theelitementors@gmail.com</h5>
+                        
                      </div>
                      <div class="header-info-box">
                         <div class="header-info-icon">
                            <i class="icofont-headphone-alt-3"></i>
                         </div>
-                        <h5>Call For Inquiry</h5>
-                        <p>+91 97414 22392 	</p>
+                        <h5>+91 97414 22392 </h5>
+                     
                      </div>
                    
                   </div>
@@ -363,6 +144,14 @@
                              <li><a href="Ap.html" class="nav-link">AP
                            </a></li>
                          
+                           <li><a href="igcse.html" class="nav-link">IGCSE
+                           </a></li>
+                           <li><a href="myp.html" class="nav-link">Myp
+                           </a></li>
+                           <li><a href="ib.html" class="nav-link">IB
+                           </a></li>
+                           <li><a href="As.html" class="nav-link">As/A
+                           </a></li>
                            <li><a href="contact.html" class="nav-link">Contact</a></li>
                            </ul>
                         </nav>
@@ -414,8 +203,11 @@
                               <h2>Education is the key</h2>
                               <p>Elevate your thinking, escalate your success </p>
                               <div class="home-single-slide-button mt-4">
-                                 <a href="#" class="slide-btn-one mb-lg-0 mb-md-0 mb-2">Learn More <i class="icofont-long-arrow-right"></i></a>
-                                 <a href="#" class="slide-btn-two">Contact Us</a>
+                                 <a href="sat.html" class="slide-btn-two">Sat</a>     
+                                       <a href="act.html" class="slide-btn-two">Act </a>  
+                                                <a href="gre.html" class="slide-btn-two">Gre </a>
+                                                <a href="gmat.html" class="slide-btn-two">Gmat</a>
+
                               </div>
                            </div>
                         </div>
@@ -435,8 +227,9 @@
                               <h2>Knowledge is the currency of progress</h2>
                               <p> Invest wisely through education</p>
                               <div class="home-single-slide-button mt-4">
-                                 <a href="#" class="slide-btn-two mb-lg-0 mb-md-0 mb-2">Our Services</a>
-                                 <a href="#" class="slide-btn-one">Read More <i class="icofont-long-arrow-right"></i></a>
+                                 <a href="Ap.html" class="slide-btn-two mb-lg-0 mb-md-0 mb-2">Ap</a>
+                                 <a href="igcse.html" class="slide-btn-two mb-lg-0 mb-md-0 mb-2">Igcse</a>
+                                 <a href="myp.html\" class="slide-btn-two mb-lg-0 mb-md-0 mb-2">Myp</a>
                               </div>
                            </div>
                         </div>
@@ -456,8 +249,8 @@
                               <h2>Empower minds, fuel dreams</h2>
                               <p>education transforms possibilities.</p>
                               <div class="home-single-slide-button mt-4">
-                                 <a href="#" class="slide-btn-one mb-lg-0 mb-md-0 mb-2">Learn More <i class="icofont-long-arrow-right"></i></a>
-                                 <a href="#" class="slide-btn-two">Contact Us</a>
+                                 
+                                 <a href="#" class="slide-btn-one mb-lg-0 mb-md-0 mb-2">Contact Now <i class="icofont-long-arrow-right"></i></a>
                               </div>
                            </div>
                         </div>
@@ -484,7 +277,7 @@
                         </div>
                      </div>
                      <div class="service-item-text-holder">
-                        <h4>Online Classes </h4>
+                        <h6>Online Classes </h6>
                      </div>
                   </div>
                </div>
@@ -496,8 +289,8 @@
                            <i class="icofont-teacher"></i>
                         </div>
                      </div>
-                     <div class="service-item-text-holder">
-                        <h4>Offline Classes </h4>
+                     <div class="service-item-text-holder ">
+                        <h6>Offline Classes </h6>
                      </div>
                   </div>
                </div>
@@ -510,7 +303,7 @@
                         </div>
                      </div>
                      <div class="service-item-text-holder">
-                        <h4>Hybrid Classes </h4>
+                        <h6>Hybrid Classes </h6>
                      </div>
                   </div>
                </div>
@@ -527,7 +320,7 @@
                   <div class="col-lg-3 col-md-3 col-12 mb-lg-0 mb-md-0 mb-4">
                      <div class="single-counter-item single-counter-item-s-2">
                         <i class="icofont-teacher"></i>
-                        <h4 class="timer">121</h4>
+                        <h4 class="timer">20</h4>
                         <p>Quality Teachers</p>
                      </div>
                   </div>
@@ -535,7 +328,7 @@
                   <div class="col-lg-3 col-md-3 col-12 mb-lg-0 mb-md-0 mb-4">
                      <div class="single-counter-item single-counter-item-s-2">
                         <i class="icofont-student-alt"></i>
-                        <h4 class="timer">342</h4>
+                        <h4 class="timer">1000</h4>
                         <p>Enrolled Students</p>
                      </div>
                   </div>
@@ -543,7 +336,7 @@
                   <div class="col-lg-3 col-md-3 col-12 mb-lg-0 mb-md-0 mb-4">
                      <div class="single-counter-item single-counter-item-s-2">
                         <i class="icofont-calendar"></i>
-                        <h4 class="timer">562</h4>
+                        <h4 class="timer">100</h4>
                         <p>Successful Events</p>
                      </div>
                   </div>
@@ -551,8 +344,8 @@
                   <div class="col-lg-3 col-md-3 col-12">
                      <div class="single-counter-item single-counter-item-s-2">
                         <i class="icofont-group-students"></i>
-                        <h4 class="timer">434</h4>
-                        <p>Satisfied Parents</p>
+                        <h4 class="timer">800</h4>
+                        <p>Achievers </p>
                      </div>
                   </div>
                   <!-- End single counter item -->
@@ -562,127 +355,27 @@
          </section>
          <!-- END COUNTER SECTION -->
 
-           <!-- START SERVICE TAB SECTION -->
-           <section id="servicetab" class="section-padding">
-            <div class="auto-container">
-           
-              <!-- end section title -->
-                <div class="service-tab">
-                   <div class="row">
-                      <div class="col-lg-3 col-12 mb-lg-0 mb-md-4 mb-4" style="margin-top: 90px;">
-                       <ul id="tabsJustified" class="nav nav-tabs">
-                          <li class="nav-item">
-                             <a href="#" data-target="#one" data-toggle="tab" class="nav-link active">
-                                <i class="icofont-teddy-bear"></i>
-                                <span>SAT/ACT</span>
-                             </a>
-                          </li>
-                          <li class="nav-item">
-                             <a href="#" data-target="#two" data-toggle="tab" class="nav-link ">
-                                <i class="icofont-paper"></i>
-                                <span>GRE/GMAT</span>
-                             </a>
-                          </li>
-                       
-                       </ul>
-                      </div>
-                      <!-- end col -->
-                      <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                         <div id="tabsJustifiedContent" class="tab-content">
-                             <div id="one" class="tab-pane animated  active fadeInUp">
-                              <h2 style="text-align: center;"><b>Scholastic Aptitude Test</b></h2>
-                                <div class="auto-container">
-                                  <div class="row">
-                                   
-                                      <!-- end col -->
-                                      <div class="col-lg-6 col-md-6 col-12 pl-lg-5 pl-0">
-                                         <div class="ab-img-col">
-                                        
-                                        <ul> 
-                                          <li>  <i class="icofont-caret-right"></i> All test material provided by Elite Mentors</li>
-                                          <li>  <i class="icofont-caret-right"></i> Students are taught how to use the Graphic calculator related to SAT</li>
-                                          <li>  <i class="icofont-caret-right"></i> Periodic tests given during the course</li>
-                                          <li> <i class="icofont-caret-right"></i>  Students are encouraged to take practice tests and come for analysis on regular basis after the course till they take SAT.</li>
-                                       </ul> 
-                                         </div>
-                                      </div>
-
-                                      <div class="col-lg-6 col-md-6 col-12 pl-lg-5 pl-0">
-                                       <div class="ab-img-col">
-                                      
-                                          <ul>
-                                             <li> <i class="icofont-caret-right"></i> Start with a Diagnostic Test. </li>
-                                             <li> <i class="icofont-caret-right"></i>   Basics of Math done for students weak at math</li>
-                                             <li> <i class="icofont-caret-right"></i> Basics of Grammar is done for every student (6 hours)</li></li>
-                                             <li> <i class="icofont-caret-right"></i> Students are taught to solve a problem in more than one approach (Short cut and traditional method)
-                                              </ul> <br> 
-                                       </div>
-                                    </div>
-                                    
-                                      <!-- end col -->
-                                   </div>
-                                </div>
-                             </div>
-                             <div id="two" class="tab-pane animated fadeInUp  show">
-                              <h2 style="text-align: center;"><b>Graduate Record Examination</b></h2>
-                                <div class="auto-container">
-                                  <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12 pl-lg-5 pl-0">
-                                       <div class="ab-img-col">
-                                        <ul>  
-                                          <li><i class="icofont-caret-right"></i>Start with a Diagnostic Test. </li>
-                                          <li><i class="icofont-caret-right"></i> Basics of Math done for students weak at math</li>
-                                          <li><i class="icofont-caret-right"></i> Basics of Grammar is done for every student – Both GRE and GMAT (6 hours)</li>
-                                          <li><i class="icofont-caret-right"></i>Even GRE students are encouraged to sit for Basic Grammar Classes</li>
-                                          <li> <i class="icofont-caret-right"></i> Even GMAT students are encouraged to sit for Vocabulary Classes</li>
-                                           
-                                         </ul>
-                                        </div>
-                                      </div>
-                                      <!-- end col -->
-                                      <div class="col-lg-6 col-md-6 col-12 pl-lg-5 pl-0">
-                                         <div class="ab-img-col">
-                                          <ul>
-                                            <li> <i class="icofont-caret-right"></i>Students are taught to solve a problem in more than one approach (Short cut and traditional method)</li>
-                                             <li><i class="icofont-caret-right"></i>Vocabulary class is given for both GRE and GMAT students as we believer that improved vocabulary will help in Reading comprehension for both GRE and GMAT students. </li>
-                                         </ul><br><br>   
-                                         </div>
-                                      </div>
-                                      <!-- end col -->
-                                   </div>
-                                </div>
-                             </div>
-                      
-                        
-                          </div>
-                      </div>
-                      <!-- end col -->
-                   </div>
-                </div>
-            </div>
-            <!--- END CONTAINER -->
-        </section>
-        <!-- END SERVICE TAB SECTION -->
+      
       <!-- START WELCOME SECTION -->
-      <section id="habout">
-         <div class="auto-container">
+      <section id="about">
+         <div class="auto-container"  >
             <div class="row">
                <div class="col-lg-6 col-md-6 col-12 mb-lg-0 mb-lg-0 mb-5">
                   <div class="about-wel-des">
-                     <h6 class="theme-color"><b> About Our Academy</b></h6>
-                     <h2 class="my-4">Each lesson a step, each step towards greatness.</h2>
+                     <h3 class="theme-color" style="padding-top: 40px;"><b> About - Elite Mentor</b></h3>
+                     <h5>Each lesson a step, each step towards greatness.</h5>
                     <p>“Elite Mentors” is a test prep centre started by passionate trainers in 2012. We cater to students preparing for study overseas such as <b>SAT</b>, <b>ACT</b>,<b> SAT Subject tests</b>,<b>AP</b>,<b>GRE</b>, <b>GMAT</b>, <b>TOEFL and IELTS</b>. We also provide coaching for students studying in International schools <b>(IGCSE, IB, As&A) on Math</b>, <b>Science</b>, <b>Economics</b>, <b>Business studies</b>, <b>Accounts</b> etc.  </p>
-                     <div class="about-btn wow fadeInUp">
+                    <br> <div class="about-btn wow fadeInUp">
                         <a href="#" class="about-us-into-btn-2 mr-2">Read More</a>
                         <a href="#" class="about-us-into-btn-icon"><i class="icofont icofont-caret-right"></i></a>
                      </div>
                   </div>
                </div>
                <!-- end col -->
-               <div class="col-lg-6 col-md-6 col-12">
+               <div class="col-lg-6 col-md-6 col-12" style="padding-top: 40px;">
                   <div class="about-wel-img-sec img-overlay">
                      <a class="venobox" data-autoplay="true" data-vbtype="video" data-title="Intro Video" data-gall="videoh" href="https://www.youtube.com/embed/Oq61TxejZ5g"><i class="icofont-play-alt-2"></i></a>
-                     <div class="img-wrap">
+                     <div class="img-wrap" >
                         <img class="img-fluid" src="assets/img/gallery/ab.jpg" alt="">
                      </div>
                   </div>
@@ -695,34 +388,98 @@
       <!-- END WELCOME SECTION -->
          <!-- START WELCOME SECTION -->
          <section id="habout" style="margin-bottom: 20px; margin-top: 90px;">
-            <h2 class="my-4" style="text-align: center;"><b>Why Elite Mentors?</b> </h2>
-            <div class="auto-container">
+           <div class="auto-container">
                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12">
-                     <div class="about-wel-img-sec img-overlay">
-                       <div class="img-wrap">
-                           <img class="img-fluid" src="assets/img/gallery/why.jpg" alt="">
-                        </div>
-                     </div>
+                  <!-- end col -->
+               <div class="col-lg-6 col-md-6 col-12 pl-lg-5 pl-md-3 pl-0 ">
+                  <div class="contact-heading mb-5 theme-color">
+                     <h3 style="color:  blue;">Contact THrough Us</h3>
                   </div>
+                  <div class="contact-form-wrap">
+                     <form id="main-form" class="contact-form form" name="enq" method="POST" action="form-process.php">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-user"></i></span>
+                                 <input type="text" class="form-control" id="name" placeholder="John" required>
+                                 <label for="name">First Name*</label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-envelope"></i></span>
+                                 <input type="email" class="form-control" id="email" placeholder="example@xyz.com" required>
+                                 <label for="email">Email*</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-ui-dial-phone"></i></span>
+                                 <input type="text" class="form-control" id="Phone" placeholder="xxx-xxx-xxxx" required>
+                                 <label for="number">Contact Number*</label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-at"></i></span>
+                                 <input type="text" class="form-control" id="Course" placeholder="Subject" required>
+                                 <label for="subject">Course</label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-ui-dial-number"></i></span>
+                                 <input type="text" class="form-control" id="Phone" placeholder="xxx-xxx-xxxx" required>
+                                 <label for="number">Mark</label>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="form-group">
+                                 <span class="form-icon"><i class="icofont-location-pin"></i></span>
+                                 <input type="text" class="form-control" id="Course" placeholder="Subject" required>
+                                 <label for="subject">Country</label>
+                              </div>
+                           </div>
+                        </div>   
+                        <div class="form-group form-message">
+                           <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+                           <label for="message">Message</label>
+                        </div><br>
+                        <div class="text-center wow fadeInUp">
+                            <div class="actions">
+                                <input value="SUBMIT MESSAGE" name="submit" id="submitButton" class="btn con-btn" title="Click here to submit your message!" type="submit">
+                                <img src="assets/img/ajax-loader.gif" id="loader" style="display:none" alt="loading" width="16" height="16">
+                            </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <!-- end col -->
                   <div class="col-lg-6 col-md-6 col-12 mb-lg-0 mb-lg-0 mb-5">
                      <div class="about-wel-des">
-                    
-                        <p ><i class="icofont-caret-right"></i> We have a vast experience in the field of training and we are passionate about it. We exactly know the student’s requirements and a student’s understanding capacity and thereby provide training which is apt to a student’s needs and capacity. 
+                        <h3 class="my-4 theme-color" style="text-align: center;">Why Elite Mentors? </h3>
+           
+                        <p ><i class="fa fa-check-square-o"></i> We have a vast experience in the field of training and we are passionate about it. We exactly know the student’s requirements and a student’s understanding capacity and thereby provide training which is apt to a student’s needs and capacity. 
                         </p>
-                        <p  ><i class="icofont-caret-right"></i> We have done a lot of study on the different types of questions and different ways of approaching to an answer, which will help the student to think in more than one way. We firmly believe that education must be enjoyable in order to learn fast. Our way of teaching will be enjoyable as well as educational. 
+                        <p  ><i class="fa fa-check-square-o"></i> We have done a lot of study on the different types of questions and different ways of approaching to an answer, which will help the student to think in more than one way. We firmly believe that education must be enjoyable in order to learn fast. 
    
                         </p>
-                        <p  ><i class="icofont-caret-right"></i>We at “Elite Mentors” believe that our training will be one of the best, if not ‘the best’ in the industry. We assure you that our training will surely enhance the confidence of the individual. 
+                        <p  ><i class="fa fa-check-square-o"></i>We at “Elite Mentors” believe that our training will be one of the best, if not ‘the best’ in the industry. We assure you that our training will surely enhance the confidence of the individual. 
    
                         </p>
-                        <p  ><i class="icofont-caret-right"></i> Once you enter “Elite Mentors”, it is a one way street. There is no exit. You will be a part of us for ever. So training is one part, the student can approach us for any doubts or clarifications at our premises at any time thereafter. Our success lies in our trainee’s success and our happiness lies in our trainee’s happiness.
+                        <p  ><i class="fa fa-check-square-o"></i> Once you enter “Elite Mentors”, it is a one way street. There is no exit. You will be a part of us for ever. So training is one part, the student can approach us for any doubts or clarifications at our premises at any time thereafter. 
 
                         </p> 
                        
-                        <p  ><i class="icofont-caret-right"></i> Elite Mentor’s success rate is very high. Our average improvement in Old SAT was 375 points. The average improvement in the new SAT is close to 250. Our highest score in Old SAT was 2400/2400, in the new SAT, it is 1560/1600 and in ACT it is 35/36. In GRE, the highest score is 334/340 and in GMAT it is 770/800. A few of our students have studied in Ivy Leagues and many have availed scholarships and tuition fee waivers.</p>
-                       
-                        <div class="about-btn wow fadeInUp">
+                        <p  ><i class="fa fa-check-square-o"></i> Elite Mentor’s success rate is very high. Our average improvement in Old SAT was 375 points. </p>
+                        <p  ><i class="fa fa-check-square-o"></i> The average improvement in the new SAT is close to 250. </p>
+                     
+                        <br>
+                        <div class="about-btn wow fadeInUp center">
                            <a href="#" class="about-us-into-btn-2 mr-2">Read More</a>  
                         </div>
                      </div>
@@ -736,77 +493,6 @@
          </section>
          <!-- END WELCOME SECTION -->
 
-      
-    <section class="testimonial text-center">
-      <div class="container">
-
-          <div class="heading white-heading">
-              Testimonial
-          </div>
-          <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-           
-              <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                      <div class="testimonial4_slide">
-                          <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                          <h4>Client 1</h4>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <div class="testimonial4_slide">
-                          <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                          <h4>Client 2</h4>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                      <div class="testimonial4_slide">
-                          <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                          <h4>Client 3</h4>
-                      </div>
-                  </div>
-              </div>
-              <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-              </a>
-          </div>
-      </div>
-  </section>
-
-      
-            
-
-      <!-- START NEWSLETTER SECTION -->
-      <section id="hnewsletter" class="hnewslettr-padding bg-theme">
-         <div class="auto-container">
-            <div class="row">
-               <div class="col-lg-7 col-12 mb-lg-0 mb-4">
-                  <div class="hnewslettr-left">
-                     <h2>Subscribe to our Newsletter</h2>
-                     <p>Enter your email and we'll send you details about new courses and events.</p>
-                  </div>
-               </div>
-               <!-- end col -->
-               <div class="col-lg-5 mt-3">
-                  <div class="hnewslettr-form">
-                     <form action="#" method="post">
-                        <div class="form-group">
-                           <span class="form-icon"><i class="icofont-envelope"></i></span>
-                           <input name="semail" class="form-control" placeholder="Your Email Address" type="email">
-                           <button type="submit" class="btn news-btn">Subscribe</button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-               <!-- end col -->
-            </div>
-         </div>
-      </section>
-      <!-- START NEWSLETTER SECTION -->
 
       <!-- START FOOTER -->
         <a href="https://api.whatsapp.com/send?phone=393661273612." class="float bounce" target="_blank">
@@ -895,14 +581,7 @@
                                  <p>theelitementors@gmail.com</p>
                               </div>
                            </div>
-                           <div class="footer-contact-sin">
-                              <div class="footer-contact-sin-left">
-                                 <i class="icofont-clock-time"></i>
-                              </div>
-                              <div class="footer-contact-sin-right">
-                                 <p>Mon - Sun : 09:00 - 18:00</p>
-                              </div>
-                           </div>
+                         
                         </div>
                      </div>
                   </div>

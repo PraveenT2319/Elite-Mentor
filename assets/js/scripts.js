@@ -424,3 +424,24 @@ Table Of Contents end
 		if (window.innerWidth < 501) swiper.params.slidesPerView = 1
 		swiper.update()
 	}
+ 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  // TAB
+	  // $(document).on('click', '.tab-wrap ul li a', function (e) {
+	  //     var curTabContentId = $(this).attr('href');
+	  //     $(this).parents('.tab-wrap').find('ul li').removeClass('active');
+	  //     $(this).parents('li').addClass('active');
+	  //     $(this).parents('.tab-wrap').find('.tab-content-id').removeClass('active');
+	  //     $(curTabContentId).addClass("active");
+	  //     e.preventDefault();
+	  // });	
